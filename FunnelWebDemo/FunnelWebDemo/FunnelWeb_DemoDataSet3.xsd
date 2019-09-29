@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FunnelWeb_DemoDataSet3" targetNamespace="http://tempuri.org/FunnelWeb_DemoDataSet3.xsd" xmlns:mstns="http://tempuri.org/FunnelWeb_DemoDataSet3.xsd" xmlns="http://tempuri.org/FunnelWeb_DemoDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FunnelWeb_DemoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FunnelWeb_DemoConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FunnelWebDemo.Properties.Settings.GlobalReference.Default.FunnelWeb_DemoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwCategoriesSecondTableAdapter" GeneratorDataComponentClassName="vwCategoriesSecondTableAdapter" Name="vwCategoriesSecond" UserDataComponentName="vwCategoriesSecondTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FunnelWeb_DemoConnectionString (Settings)" DbObjectName="FunnelWeb_Demo.dbo.vwCategoriesSecond" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT crlID, catIDParent, catID, catDescription, urlURL FROM dbo.vwCategoriesSecond</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="crlID" DataSetColumn="crlID" />
+              <Mapping SourceColumn="catIDParent" DataSetColumn="catIDParent" />
+              <Mapping SourceColumn="catID" DataSetColumn="catID" />
+              <Mapping SourceColumn="catDescription" DataSetColumn="catDescription" />
+              <Mapping SourceColumn="urlURL" DataSetColumn="urlURL" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FunnelWeb_DemoDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FunnelWeb_DemoDataSet3" msprop:Generator_UserDSName="FunnelWeb_DemoDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwCategoriesSecond" msprop:Generator_TableClassName="vwCategoriesSecondDataTable" msprop:Generator_TableVarName="tablevwCategoriesSecond" msprop:Generator_TablePropName="vwCategoriesSecond" msprop:Generator_RowDeletingName="vwCategoriesSecondRowDeleting" msprop:Generator_RowChangingName="vwCategoriesSecondRowChanging" msprop:Generator_RowEvHandlerName="vwCategoriesSecondRowChangeEventHandler" msprop:Generator_RowDeletedName="vwCategoriesSecondRowDeleted" msprop:Generator_UserTableName="vwCategoriesSecond" msprop:Generator_RowChangedName="vwCategoriesSecondRowChanged" msprop:Generator_RowEvArgName="vwCategoriesSecondRowChangeEvent" msprop:Generator_RowClassName="vwCategoriesSecondRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="crlID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncrlID" msprop:Generator_ColumnPropNameInRow="crlID" msprop:Generator_ColumnPropNameInTable="crlIDColumn" msprop:Generator_UserColumnName="crlID" type="xs:int" minOccurs="0" />
+              <xs:element name="catIDParent" msprop:Generator_ColumnVarNameInTable="columncatIDParent" msprop:Generator_ColumnPropNameInRow="catIDParent" msprop:Generator_ColumnPropNameInTable="catIDParentColumn" msprop:Generator_UserColumnName="catIDParent" type="xs:int" minOccurs="0" />
+              <xs:element name="catID" msprop:Generator_ColumnVarNameInTable="columncatID" msprop:Generator_ColumnPropNameInRow="catID" msprop:Generator_ColumnPropNameInTable="catIDColumn" msprop:Generator_UserColumnName="catID" type="xs:int" minOccurs="0" />
+              <xs:element name="catDescription" msprop:Generator_ColumnVarNameInTable="columncatDescription" msprop:Generator_ColumnPropNameInRow="catDescription" msprop:Generator_ColumnPropNameInTable="catDescriptionColumn" msprop:Generator_UserColumnName="catDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2083" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="urlURL" msprop:Generator_ColumnVarNameInTable="columnurlURL" msprop:Generator_ColumnPropNameInRow="urlURL" msprop:Generator_ColumnPropNameInTable="urlURLColumn" msprop:Generator_UserColumnName="urlURL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2083" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
